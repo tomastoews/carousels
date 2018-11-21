@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="author" content="Tomas Töws">
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/glider.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Carousel</title>
+</head>
+<body>
+    
+    <div class="glider-contain multiple">
+        <h1 class="title">User Testimonials</h1>
+        <button class="testimonials-glider-prev glider-prev">
+            <i class="fa fa-chevron-left"></i>
+        </button>
+        <div class="testimonials-glider">
+            <figure>
+                <blockquote>"Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis hic rem expedita."</blockquote>
+                <figcaption>John Doe</figcaption>
+            </figure>
+            <figure>
+                <blockquote>"Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis hic rem expedita."</blockquote>
+                <figcaption>John Doe</figcaption>
+            </figure>
+            <figure>
+                <blockquote>"Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis hic rem expedita."</blockquote>
+                <figcaption>John Doe</figcaption>
+            </figure>
+            <figure>
+                <blockquote>"Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis hic rem expedita."</blockquote>
+                <figcaption>John Doe</figcaption>
+            </figure>
+            <figure>
+                <blockquote>"Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis hic rem expedita."</blockquote>
+                <figcaption>John Doe</figcaption>
+            </figure>
+        </div>
+        <button class="testimonials-glider-next glider-next">
+            <i class="fa fa-chevron-right"></i>
+        </button>
+        <div class="testimonials-glider-dots"></div>
+    </div>
+
+    <div class="glider-contain multiple">
+        <h1 class="title">Images</h1>
+        <button class="images-glider-prev glider-prev">
+            <i class="fa fa-chevron-left"></i>
+        </button>
+        <div class="images-glider">
+            <img src="images/image1.jpeg">
+            <img src="images/image4.jpg">
+            <img src="images/image2.jpeg">
+            <img src="images/image3.jpeg">
+        </div>
+        <button class="images-glider-next glider-next">
+            <i class="fa fa-chevron-right"></i>
+        </button>
+        <div class="images-glider-dots"></div>
+    </div>
+
+    <script src="js/glider.min.js"></script>
+    <script>
+
+        new Glider(document.querySelector('.testimonials-glider'), {
+            slidesToShow: 1,
+            draggable: true,
+            dots: '.testimonials-glider-dots',
+            arrows: {
+                prev: '.testimonials-glider-prev',
+                next: '.testimonials-glider-next'
+            },
+            responsive: [{
+                breakpoint: 900,
+                settings: {
+                    slidesToShow: 2
+                }
+            }]
+        });
+
+        new Glider(document.querySelector('.images-glider'), {
+            slidesToShow: 1,
+            draggable: true,
+            dots: '.images-glider-dots',
+            arrows: {
+                prev: '.images-glider-prev',
+                next: '.images-glider-next'
+            }
+        });
+
+    </script>
+
+</body>
+</html>
