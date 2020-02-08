@@ -1,0 +1,26 @@
+{
+  "name": "carousels",
+  "version": "1.0.0",
+  "description": "Simple carousels using Glider.js",
+  "main": "index.js",
+  "scripts": {
+    "dev": "parcel src/index.html",
+    "build": "parcel build src/index.html",
+    "build-and-deploy": "rm -r -f -v dist/ && parcel build src/index.html && node rewriteURLs.js && ./deploy.sh"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tomastoews/carousels.git"
+  },
+  "author": "Tomas Töws",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/tomastoews/carousels/issues"
+  },
+  "homepage": "https://github.com/tomastoews/carousels#readme",
+  "devDependencies": {
+    "parcel-bundler": "^1.12.4",
+    "replace-in-file": "^5.0.2",
+    "sass": "^1.25.0"
+  }
+}
