@@ -2,4 +2,4 @@
 Simple carousels using Glider.js
 
 # Live Demo
-https://carousels.netlify.com/
+https://projects.tomastoews.de/carousels
