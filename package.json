@@ -19,8 +19,8 @@
   },
   "homepage": "https://github.com/tomastoews/carousels#readme",
   "devDependencies": {
-    "parcel-bundler": "^1.12.4",
-    "replace-in-file": "^5.0.2",
-    "sass": "^1.25.0"
+    "parcel": "^2.4.0",
+    "replace-in-file": "^6.3.2",
+    "sass": "^1.49.9"
   }
 }
