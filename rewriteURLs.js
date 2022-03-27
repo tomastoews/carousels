@@ -18,16 +18,14 @@ performReplacements({
         /href=\//g,
         /src="\//g,
         /src=\//g,
-        /<base href="/g,
-        /<base href=/g
+        /<base href="/g
     ],
     to: [
         'href="',
         'href=',
         'src="',
         'src=',
-        '<base href="/',
-        '<base href=/',
+        '<base href="/'
     ],
     countMatches: true,
 });
