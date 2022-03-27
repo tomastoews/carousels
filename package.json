@@ -2,7 +2,6 @@
   "name": "carousels",
   "version": "1.0.0",
   "description": "Simple carousels using Glider.js",
-  "main": "index.js",
   "scripts": {
     "dev": "parcel src/index.html",
     "build": "parcel build src/index.html",
@@ -19,6 +18,7 @@
   },
   "homepage": "https://github.com/tomastoews/carousels#readme",
   "devDependencies": {
+    "@parcel/transformer-sass": "^2.4.0",
     "parcel": "^2.4.0",
     "replace-in-file": "^6.3.2",
     "sass": "^1.49.9"
